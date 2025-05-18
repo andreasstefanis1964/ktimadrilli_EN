@@ -1697,59 +1697,6 @@ a {
 .cid-uKYtBYyjw1 .grid-container-2 {
   align-items: flex-start;
 }
-.cid-uKYtBYyZEv {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  background-color: #ffffff;
-}
-.cid-uKYtBYyZEv .item-subtitle {
-  line-height: 1.2;
-  color: #000000;
-  text-align: center;
-}
-.cid-uKYtBYyZEv img,
-.cid-uKYtBYyZEv .item-img {
-  width: 100%;
-  height: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-.cid-uKYtBYyZEv .item:focus,
-.cid-uKYtBYyZEv span:focus {
-  outline: none;
-}
-.cid-uKYtBYyZEv .item {
-  margin-bottom: 2rem;
-}
-@media (max-width: 767px) {
-  .cid-uKYtBYyZEv .item {
-    margin-bottom: 1rem;
-  }
-}
-.cid-uKYtBYyZEv .item-wrapper {
-  position: relative;
-  border-radius: 4px;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.cid-uKYtBYyZEv .mbr-section-btn {
-  margin-top: auto !important;
-}
-.cid-uKYtBYyZEv .mbr-section-title {
-  color: #000000;
-}
-.cid-uKYtBYyZEv .mbr-text,
-.cid-uKYtBYyZEv .mbr-section-btn {
-  color: #000000;
-  text-align: center;
-}
-.cid-uKYtBYyZEv .item-title {
-  color: #000000;
-  text-align: center;
-}
-.cid-uKYtBYyZEv .content-head {
-  max-width: 800px;
-}
 .cid-uKYtBYyI43 {
   background-image: url("../../../assets/images/ktima-drilli-36.webp");
   overflow: hidden;
