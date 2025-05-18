@@ -1465,6 +1465,13 @@ a {
   width: 200px;
   object-fit: cover;
 }
+.cid-uKYtBYvXwP {
+  background-image: url("../../../assets/images/ktima-drilli-21.webp");
+}
+.cid-uKYtBYvXwP .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.3;
+}
 .cid-uKYtBYvXwP .mbr-fallback-image.disabled {
   display: none;
 }
@@ -1476,7 +1483,6 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-  background-image: url("../../../assets/images/background1.jpg");
 }
 .cid-uKYtBYvXoz {
   padding-top: 5rem;
