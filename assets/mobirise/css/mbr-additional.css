@@ -1434,6 +1434,96 @@ a {
 .cid-uKYtBYt6i1 .mbr-section-btn {
   color: #000000;
 }
+.cid-uNybb26QUa {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+}
+.cid-uNybb26QUa .item-wrapper {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uNybb26QUa .smallImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cid-uNybb26QUa .largeImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cid-uNybb26QUa .largeImage .item {
+    margin-bottom: 2rem;
+  }
+  .cid-uNybb26QUa .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .cid-uNybb26QUa .largeImage .item {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uNybb26QUa .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uNybb26QUa .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uNybb26QUa .mbr-description {
+  text-align: left;
+}
+.cid-uNybb26QUa .card-title,
+.cid-uNybb26QUa .iconfont-wrapper {
+  color: #000000;
+}
+.cid-uNybb26QUa .card-text {
+  color: #000000;
+}
+.cid-uNybb26QUa .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-uNybb26QUa .mbr-number {
+  color: #9fe870;
+}
+.cid-uNybb26QUa .mbr-text,
+.cid-uNybb26QUa .mbr-section-btn {
+  text-align: center;
+}
+.cid-uNybb26QUa .card-text,
+.cid-uNybb26QUa .item .mbr-section-btn {
+  text-align: left;
+}
+.cid-uNybb26QUa .smallImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .cid-uNybb26QUa .smallImage {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.cid-uNybb26QUa .largeImage {
+  width: 100%;
+  height: 632px;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .cid-uNybb26QUa .largeImage {
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .cid-uKYtBYvXwP {
   background-image: url("../../../assets/images/ktima-drilli-21.webp");
 }
@@ -1490,7 +1580,7 @@ a {
   flex-flow: column nowrap;
 }
 .cid-uLyL7iqrpQ .mbr-section-title {
-  color: #232323;
+  color: #3a7613;
 }
 .cid-uLyL7iqrpQ .mbr-text,
 .cid-uLyL7iqrpQ .mbr-section-btn {
