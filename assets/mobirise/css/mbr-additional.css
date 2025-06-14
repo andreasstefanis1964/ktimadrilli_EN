@@ -1985,7 +1985,7 @@ a {
   max-width: 800px;
 }
 .cid-uO5OY7g5UE {
-  background-color: #a2784f;
+  background-color: #e1cc93;
 }
 .cid-uO5OY7g5UE .img-wrap {
   width: 100% !important;
@@ -2099,14 +2099,18 @@ a {
   top: 0;
 }
 .cid-uO5OY7g5UE .mbr-section-title {
-  color: #a3c6d2;
+  color: #3a7613;
 }
 .cid-uO5OY7g5UE .mbr-text,
 .cid-uO5OY7g5UE .mbr-section-btn {
-  color: #ffffff;
+  color: #000000;
+}
+.cid-uO5OY7g5UE .mbr-section-subtitle,
+.cid-uO5OY7g5UE .underline {
+  color: #0e7b9e;
 }
 .cid-uO5yREFZlV {
-  background-color: #2b6477;
+  background-color: #0e7b9e;
 }
 .cid-uO5yREFZlV .img-wrap {
   width: 100% !important;
@@ -2216,11 +2220,11 @@ a {
 }
 .cid-uO5yREFZlV .mbr-text,
 .cid-uO5yREFZlV .mbr-section-btn {
-  color: #a3c6d2;
+  color: #edefeb;
 }
-.cid-uKYtBYyI43 {
-  background-image: url("../../../assets/images/ktima-drilli-36.webp");
-  overflow: hidden;
+.cid-uO5yREFZlV .mbr-section-subtitle,
+.cid-uO5yREFZlV .underline {
+  color: #edefeb;
 }
 .cid-uLyKGUVHVL {
   padding-top: 6rem;
