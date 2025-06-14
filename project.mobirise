@@ -265,7 +265,7 @@
         "css": "'Manrope', sans-serif"
       }
     ],
-    "uniqCompNum": 11,
+    "uniqCompNum": 12,
     "imageResize": true,
     "multilingual": false,
     "favicon": false,
@@ -2082,13 +2082,188 @@
               }
             },
             ".mbr-section-title": {
+              "color": "#a3c6d2"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features3 hotelm4_features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"20\" max=\"100\" step=\"5\" value=\"100\" condition=\"!fullWidth\">\n\t\t<select title=\"Paragraphs Count\" name=\"paragraphsCount\" condition=\"showText\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Underline\" name=\"showUnderline\" condition=\"showSubtitle\" checked>\n\t\t<input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#ffffff\" condition=\"showUnderline && showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Media on Left/Right\" name=\"reverseContent\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#a2784f\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2jqUN6d6ZyM\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container-fluid': fullWidth,\n                    'container': !fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"image-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\">\n\t\t\t\t<div class=\"img-wrap\" mbr-style=\"{'height': mediaSize + '%',\n                                'width': mediaSize + '%'}\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-1919x1279.jpg\" alt>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"text-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\" mbr-if=\"showTitle || showSubtitle || showText ||showButtons\">\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-lighter mbr-white\" mbr-class=\"{'pb-3': !showUnderline}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .underline\">KTIMA DRILLI IN NAXOS ISLAND</h3>\n\t\t\t\t<div class=\"underline pb-3\" mbr-if=\"showUnderline && showSubtitle\">\n\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t</div>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style pb-4 mbr-white\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Naxos Chora<br></h2>\n\t\t\t\t<div class=\"paragraphs-wrapper pb-4\" mbr-if=\"showText\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-lighter\" mbr-class=\"{'first-paragraph': paragraphsCount == 2}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Naxos Chora, the capital of Naxos Island in the Cyclades, is a charming destination with a blend of historical, cultural, and natural attractions. Here’s what’s good to know:<br><br>1. Portara (Temple of Apollo): The most iconic landmark in Naxos Chora<br>2. Venetian Castle (Kastro), a medieval Venetian castle, dominates the town.<br>3. Charming Old Town (Old Market): The labyrinthine streets of the Old Town are perfect for wandering. <br>4. Naxos Chora is close to beautiful beaches, such as Agios Georgios, just a short walk from the town. <br>5. Cultural and Historical Significance</p>\n\t\t\t\t\t<p class=\"second-paragraph mbr-text mbr-fonts-style mbr-lighter\" mbr-theme-style=\"display-7\" mbr-if=\"paragraphsCount == 2\" data-app-selector=\".mbr-text, .mbr-section-btn\">with fridge and stovetop, and a bathroom with bath or shower. Facilities also include a mini safe, a flat-screen TV and free WiFi. Enjoy the fresh sea breeze with your morning coffee in your private balcony. </p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-info\" data-app-placeholder=\"Type Text\">MORE INFORMATION</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "features3-b",
+          "_isUserblock": true,
+          "_cid": "uO5OY7g5UE",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "features3",
+          "_sourceTheme": "hotelm4",
+          "_styles": {
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@fullWidth)": {
+              ".img-wrap": {
+                "width": "100% !important",
+                "height": "100% !important"
+              }
+            },
+            ".row": {
+              "& when (@reverseContent)": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".underline": {
+              ".line": {
+                "width": "2rem",
+                "height": "1px",
+                "background": "@underlineColor",
+                "display": "inline-block"
+              }
+            },
+            ".image-element": {
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "img": {
+                "width": "100%",
+                "height": "100%",
+                "object-fit": "cover",
+                "object-position": "center center"
+              },
+              "@media (min-width: 1200px)": {
+                "& when (@reverseContent) and (@fullWidth)": {
+                  "padding-right": "0"
+                },
+                "& when not (@reverseContent) and (@fullWidth)": {
+                  "padding-left": "0"
+                }
+              }
+            },
+            ".text-element": {
+              "display": "flex",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "padding": "2rem"
+            },
+            ".mbr-text": {
+              "color": "#878787",
+              "line-height": "27px"
+            },
+            ".brown": {
+              "color": "#c19b76"
+            },
+            ".paragraphs-wrapper": {
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".first-paragraph, .second-paragraph": {
+                "margin": "0"
+              }
+            },
+            "@media (max-width: 991px)": {
+              "& when (@fullWidth) and (@reverseContent)": {
+                ".image-element": {
+                  "padding-bottom": "1rem"
+                }
+              },
+              "& when not (@reverseContent) and (@fullWidth)": {
+                ".image-element": {
+                  "padding-top": "1rem"
+                }
+              },
+              "& when (@reverseContent)": {
+                ".row": {
+                  "-webkit-flex-direction": "column-reverse",
+                  "flex-direction": "column-reverse"
+                }
+              },
+              "& when not (@fullWidth)": {
+                "& when (@reverseContent)": {
+                  ".text-element": {
+                    "padding-top": "0"
+                  }
+                },
+                "& when not (@reverseContent)": {
+                  ".text-element": {
+                    "padding-bottom": "0"
+                  }
+                }
+              },
+              ".paragraphs-wrapper": {
+                "-webkit-flex-direction": "column",
+                "flex-direction": "column",
+                ".first-paragraph, .second-paragraph": {
+                  "width": "100%",
+                  "padding": "0"
+                }
+              }
+            },
+            "@media (min-width: 768px)": {
+              ".first-paragraph, .second-paragraph": {
+                "width": "50%"
+              },
+              ".first-paragraph": {
+                "padding-right": "0.5rem"
+              },
+              ".second-paragraph": {
+                "padding-left": "0.5rem"
+              },
+              ".text-element": {
+                "padding": "6rem",
+                "& when not (@fullWidth)": {
+                  "padding": "1rem"
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-title, .mbr-section-btn": {
+                "text-align": "left"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
               "color": "#c6ad72"
             },
             ".mbr-text, .mbr-section-btn": {
               "color": "#a3c6d2"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features3 hotelm4_features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"20\" max=\"100\" step=\"5\" value=\"100\" condition=\"!fullWidth\">\n\t\t<select title=\"Paragraphs Count\" name=\"paragraphsCount\" condition=\"showText\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Underline\" name=\"showUnderline\" condition=\"showSubtitle\" checked>\n\t\t<input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#ffffff\" condition=\"showUnderline && showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Media on Left/Right\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#2b6477\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2jqUN6d6ZyM\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container-fluid': fullWidth,\n                    'container': !fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"image-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\">\n\t\t\t\t<div class=\"img-wrap\" mbr-style=\"{'height': mediaSize + '%',\n                                'width': mediaSize + '%'}\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-3-1919x1279.jpg\" alt=\"Villa Ioli with private pool in Evritos Villas in Karpenisi\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"text-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\" mbr-if=\"showTitle || showSubtitle || showText ||showButtons\">\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-lighter mbr-white\" mbr-class=\"{'pb-3': !showUnderline}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .underline\">CELINI RETREAT IN NAXOS ISLAND</h3>\n\t\t\t\t<div class=\"underline pb-3\" mbr-if=\"showUnderline && showSubtitle\">\n\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t</div>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style pb-4 mbr-white\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Golden sandy beaches</h2>\n\t\t\t\t<div class=\"paragraphs-wrapper pb-4\" mbr-if=\"showText\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-lighter\" mbr-class=\"{'first-paragraph': paragraphsCount == 2}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Naxos Island is renowned for its stunning beaches, offering something for everyone, from lively, organized spots to quiet, unspoiled coves. Here are the most popular beaches on the island:<br><br>Agios Prokopios, Agia Anna, Plaka Beach, Mikri Vigla, Orkos, Alyko, Kastraki, Pyrgaki, Apollonas, Agiassos<br><br>Highlights: Its pristine environment and tranquil setting.<br>Each beach in Naxos offers its unique charm, making the island a paradise for beach lovers. Whether you prefer a bustling atmosphere or serene solitude, you'll find your perfect spot!</p>\n\t\t\t\t\t<p class=\"second-paragraph mbr-text mbr-fonts-style mbr-lighter\" mbr-theme-style=\"display-7\" mbr-if=\"paragraphsCount == 2\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\tEnjoy entertainment with three televisions as well as high-speed Wi-Fi in each villa. Additional amenities like floor heating, free parking and cleaning service further enhance your stay. One of the true highlights is the natural stone terrace. With the private pool and BBQ area in each villa, nothing stands in the way of pure relaxation.</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-info\" data-app-placeholder=\"Type Text\" href=\"page1.html#header6-0\">MORE INFORMATION</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features3 hotelm4_features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"!fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"20\" max=\"100\" step=\"5\" value=\"100\" condition=\"!fullWidth\">\n\t\t<select title=\"Paragraphs Count\" name=\"paragraphsCount\" condition=\"showText\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Underline\" name=\"showUnderline\" condition=\"showSubtitle\" checked>\n\t\t<input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#ffffff\" condition=\"showUnderline && showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Media on Left/Right\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#2b6477\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2jqUN6d6ZyM\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container-fluid': fullWidth,\n                    'container': !fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"image-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\">\n\t\t\t\t<div class=\"img-wrap\" mbr-style=\"{'height': mediaSize + '%',\n                                'width': mediaSize + '%'}\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-3-1919x1279.jpg\" alt=\"Villa Ioli with private pool in Evritos Villas in Karpenisi\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"text-element\" mbr-class=\"{'col-xl-5': !fullWidth,\n                            'col-xl-6': fullWidth}\" mbr-if=\"showTitle || showSubtitle || showText ||showButtons\">\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-lighter mbr-white\" mbr-class=\"{'pb-3': !showUnderline}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .underline\">KTIMA DRILLI IN NAXOS ISLAND</h3>\n\t\t\t\t<div class=\"underline pb-3\" mbr-if=\"showUnderline && showSubtitle\">\n\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t</div>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style pb-4 mbr-white\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Golden sandy beaches</h2>\n\t\t\t\t<div class=\"paragraphs-wrapper pb-4\" mbr-if=\"showText\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-lighter\" mbr-class=\"{'first-paragraph': paragraphsCount == 2}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Naxos Island is renowned for its stunning beaches, offering something for everyone, from lively, organized spots to quiet, unspoiled coves. Here are the most popular beaches on the island:<br><br>Agios Prokopios, Agia Anna, Plaka Beach, Mikri Vigla, Orkos, Alyko, Kastraki, Pyrgaki, Apollonas, Agiassos<br><br>Highlights: Its pristine environment and tranquil setting.<br>Each beach in Naxos offers its unique charm, making the island a paradise for beach lovers. Whether you prefer a bustling atmosphere or serene solitude, you'll find your perfect spot!</p>\n\t\t\t\t\t<p class=\"second-paragraph mbr-text mbr-fonts-style mbr-lighter\" mbr-theme-style=\"display-7\" mbr-if=\"paragraphsCount == 2\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\tEnjoy entertainment with three televisions as well as high-speed Wi-Fi in each villa. Additional amenities like floor heating, free parking and cleaning service further enhance your stay. One of the true highlights is the natural stone terrace. With the private pool and BBQ area in each villa, nothing stands in the way of pure relaxation.</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-info\" data-app-placeholder=\"Type Text\" href=\"page1.html#header6-0\">MORE INFORMATION</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_anchor": "features3-9",
           "_isUserblock": true,
           "_cid": "uO5yREFZlV",
@@ -2252,12 +2427,12 @@
             },
             "overflow": "hidden",
             ".media-container-row .mbr-text": {
-              "color": "#b59b55"
+              "color": "#0e7b9e"
             }
           },
           "_name": "footer04",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f7f7f7\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 Ktima Drilli Naxos - All Rights Reserved&nbsp;- Designed &amp; developed from https://ela-tourism-technologies.com</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#e1cc93\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 Ktima Drilli Naxos - All Rights Reserved&nbsp;- Designed &amp; developed from https://ela-tourism-technologies.com</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uO5wNiZNkk",
           "_anchor": "footer04-8",
           "_protectedParams": [],
